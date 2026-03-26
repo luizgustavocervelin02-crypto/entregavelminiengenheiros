@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Engenheiros | Área de Membros</title>
+    <meta name="description"
+        content="Área de membros oficial do curso Mini Engenheiros. Aprenda robótica de forma divertida!">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Decorative Background Gears -->
+    <div class="bg-decor">
+        <svg class="gear gear-small" viewBox="0 0 100 100">
+            <path
+                d="M50 20c-16.6 0-30 13.4-30 30s13.4 30 30 30 30-13.4 30-30-13.4-30-30-30zm0 46c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM50 0l-5 15h10L50 0zm35 15l-13 8 5 9 13-8-5-9zM100 50l-15-5v10l15-5zM85 85l-8-13-9 5 8 13 9-5zM50 100l5-15h-10l5 15zm-35-15l13-8-5-9-13 8 5 9zM0 50l15 5V45L0 50zm15-35l8 13 9-5-8-13-9 5z" />
+        </svg>
+        <svg class="gear gear-large" viewBox="0 0 100 100">
+            <path
+                d="M50 20c-16.6 0-30 13.4-30 30s13.4 30 30 30 30-13.4 30-30-13.4-30-30-30zm0 46c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM50 0l-5 15h10L50 0zm35 15l-13 8 5 9 13-8-5-9zM100 50l-15-5v10l15-5zM85 85l-8-13-9 5 8 13 9-5zM50 100l5-15h-10l5 15zm-35-15l13-8-5-9-13 8 5 9zM0 50l15 5V45L0 50zm15-35l8 13 9-5-8-13-9 5z" />
+        </svg>
+    </div>
+
+    <!-- Global Countdown Bar -->
+    <div id="countdown-bar" class="countdown-bar">
+        <span>Próximo Passo: <b>Certificado de Mini Engenheiro</b> disponível em:</span>
+        <div id="countdown" class="countdown-timer">00d 00h 00m 00s</div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="assets/robot-logo.png" alt="Logotipo Mini Engenheiros">
+            <span>Mini Engenheiros</span>
+        </div>
+        <nav>
+            <a href="#" class="nav-link active" data-target="home">Início</a>
+            <a href="#" class="nav-link" data-target="aulas">Videoaulas</a>
+            <a href="#" class="nav-link" data-target="projetos">Projetos</a>
+            <a href="#" class="nav-link" data-target="bonus">Bônus</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home-section">
+            <h2 class="section-title">Bem-vindo, Mini Engenheiro!</h2>
+            <div class="module-grid">
+                <!-- Video Module Preview -->
+                <div class="card" data-trigger="aulas">
+                    <div class="card-icon"><img src="assets/video-icon.png" alt="Vídeo Icon"></div>
+                    <h3>Minhas Videoaulas</h3>
+                    <p>Assista às aulas fundamentais para se tornar um mestre em robótica.</p>
+                    <a href="#" class="btn btn-primary" onclick="showSection('aulas')">Continuar Aulas</a>
+                </div>
+
+                <!-- Projects Module Preview -->
+                <div class="card" data-trigger="projetos">
+                    <div class="card-icon"><img src="assets/project-icon.png" alt="Projeto Icon"></div>
+                    <h3>Laboratório de Projetos</h3>
+                    <p>Baixe guias de montagem e compartilhe suas criações com a turma.</p>
+                    <a href="#" class="btn btn-primary" onclick="showSection('projetos')">Ver Projetos</a>
+                </div>
+
+                <!-- Bonus Module Preview -->
+                <div class="card" data-trigger="bonus">
+                    <div class="card-icon"><img src="assets/gift-icon.png" alt="Bônus Icon"></div>
+                    <h3>Materiais Bônus</h3>
+                    <p>Conteúdos exclusivos e ferramentas extras para você decolar.</p>
+                    <a href="#" class="btn btn-orange" onclick="showSection('bonus')">Acessar Bônus</a>
+                </div>
+
+                <!-- Certificate -->
+                <div id="certificate-card" class="card locked">
+                    <div class="locked-badge">DESBLOQUEIA EM 7 DIAS</div>
+                    <div class="card-icon"><img src="assets/medal-icon.png" alt="Medalha Icon"></div>
+                    <h3>Diploma Oficial</h3>
+                    <p>Conclua todas as aulas e realize seus projetos para liberar seu certificado.</p>
+                    <a href="#" class="btn btn-primary disabled" id="cert-btn">Certificado Bloqueado</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Lessons Section -->
+        <section id="aulas-section" class="video-module">
+            <h2 class="section-title">Nossas Videoaulas</h2>
+            <div class="video-grid">
+                <div class="video-container">
+                    <div class="video-player-container">
+                        <!-- Simulated Video Player -->
+                        <div
+                            style="color:white; display:flex; align-items:center; justify-content:center; height:100%; font-size:1.5rem;">
+                            <span id="current-video-title">Aula 1: Introdução à Robótica</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-list">
+                    <div class="video-item active" data-id="1" data-title="Aula 1: Introdução à Robótica">
+                        <div class="video-thumb">01</div>
+                        <div class="video-info">
+                            <h4>Aula 1: O Que é um Robô?</h4>
+                            <span class="progress-tag">Concluído</span>
+                        </div>
+                    </div>
+                    <div class="video-item" data-id="2" data-title="Aula 2: Engrenagens e Motores">
+                        <div class="video-thumb">02</div>
+                        <div class="video-info">
+                            <h4>Aula 2: Vida e Movimento</h4>
+                            <span class="progress-tag">Assistindo agora</span>
+                        </div>
+                    </div>
+                    <div class="video-item" data-id="3" data-title="Aula 3: Programação Básica">
+                        <div class="video-thumb">03</div>
+                        <div class="video-info">
+                            <h4>Aula 3: Desafio de Programação</h4>
+                            <span class="progress-tag">Pendente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projetos-section" style="display:none;">
+            <div class="header-with-action">
+                <h2 class="section-title">Laboratório Criativo</h2>
+                <div
+                    style="background: rgba(52, 152, 219, 0.1); padding: 10px 20px; border-radius: 20px; font-weight: 700; color: var(--primary-blue);">
+                    Área Experimental
+                </div>
+            </div>
+
+            <div class="module-grid">
+                <div class="card project-card">
+                    <div class="project-img">
+                        <img src="assets/robot-proj-1.png" alt="Robô Carro">
+                    </div>
+                    <h3>Robô Rodas-Velozes</h3>
+                    <p>Instruções passo a passo para montar seu primeiro carrinho robotizado com sensores.</p>
+                    <div class="project-meta">
+                        <span><img src="assets/project-icon.png" style="width:16px;"> Nível: Fácil</span>
+                        <span><img src="assets/video-icon.png" style="width:16px;"> 3 Vídeos</span>
+                    </div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Baixar Manual PDF</a>
+                </div>
+
+                <div class="card project-card">
+                    <div class="project-img">
+                        <img src="assets/robot-proj-2.png" alt="Braço Robótico">
+                    </div>
+                    <h3>Braço Mecânico DIY</h3>
+                    <p>Desafio avançado: crie um braço que consegue pegar objetos leves e empilhar blocos.</p>
+                    <div class="project-meta">
+                        <span><img src="assets/project-icon.png" style="width:16px;"> Nível: Médio</span>
+                        <span><img src="assets/video-icon.png" style="width:16px;"> 5 Vídeos</span>
+                    </div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Ver Desafio</a>
+                </div>
+            </div>
+
+            <div class="card interactive-box">
+                <div class="interactive-content">
+                    <div class="mascot-mini">
+                        <img src="assets/robot-logo.png" alt="Tobor">
+                    </div>
+                    <div>
+                        <h3>Mural da Engenharia!</h3>
+                        <p>Já terminou sua montagem? Tire uma foto bem legal do seu robô e compartilhe com os outros
+                            gênios da turma!</p>
+                        <div class="action-group">
+                            <button class="btn btn-primary">Enviar Minha Foto</button>
+                            <button class="btn btn-orange">Ver Galeria de Robôs</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bonus Section -->
+        <section id="bonus-section" style="display:none;">
+            <h2 class="section-title">Bônus Exclusivo</h2>
+            <div class="card bonus-card">
+                <div class="bonus-img-container">
+                    <img src="assets/bonus-box.png" alt="Bônus" class="floating">
+                </div>
+                <div class="bonus-info">
+                    <span class="bonus-label">ESPECIAL</span>
+                    <h3>Kit Digital de Adesivos & Posters</h3>
+                    <p>Adesivos incríveis para imprimir e decorar seus robôs, seu laboratório e seu caderno! Inclui
+                        também 3 posters exclusivos "Pequeno Grande Inventor".</p>
+                    <div style="display:flex; gap:15px; margin-top:20px;">
+                        <a href="#" class="btn btn-orange">Baixar Kit Bônus (PDF)</a>
+                        <a href="#" class="btn btn-primary">Instruções de Uso</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top:20px; text-align:center;">
+                <h3>Aula Secreta: Robótica com Recicláveis</h3>
+                <p>Aprenda a criar robôs incríveis usando apenas sucata e criatividade.</p>
+                <a href="#" class="btn btn-primary" style="margin-top:15px;">Acessar Aula Secreta</a>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
