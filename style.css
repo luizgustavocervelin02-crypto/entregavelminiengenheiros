@@ -287,11 +287,41 @@ main {
     margin-bottom: 4px;
 }
 
-.video-info .progress-tag {
-    font-size: 0.75rem;
-    color: var(--primary-blue);
+/* Video Module Enhancements */
+.module-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 8px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    cursor: pointer;
     font-weight: 700;
-    text-transform: uppercase;
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.tab-btn.active {
+    background: var(--white);
+    color: var(--primary-blue);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.video-description-box h3 {
+    margin-bottom: 10px;
+}
+
+.video-description-box p {
+    font-size: 0.95rem;
+    color: var(--text-dark);
 }
 
 /* Buttons */

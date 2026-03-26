@@ -86,36 +86,121 @@
         <!-- Video Lessons Section -->
         <section id="aulas-section" class="video-module">
             <h2 class="section-title">Nossas Videoaulas</h2>
+
+            <!-- Module Switcher Tabs -->
+            <div class="module-tabs">
+                <button class="tab-btn active" data-module="1">Módulo 1: Sucata</button>
+                <button class="tab-btn" data-module="2">Módulo 2: Lógica</button>
+                <button class="tab-btn" data-module="3">Módulo 3: Eletrônica</button>
+            </div>
+
             <div class="video-grid">
                 <div class="video-container">
                     <div class="video-player-container">
-                        <!-- Simulated Video Player -->
-                        <div
-                            style="color:white; display:flex; align-items:center; justify-content:center; height:100%; font-size:1.5rem;">
-                            <span id="current-video-title">Aula 1: Introdução à Robótica</span>
-                        </div>
+                        <iframe id="main-video-iframe" width="100%" height="100%"
+                            src="https://www.youtube.com/embed/sIQoHX97-OU" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video-description-box card" style="margin-top: 20px;">
+                        <h3 id="current-video-title">O que é um Robô?</h3>
+                        <p id="current-video-desc">Esta aula introduz a distinção fundamental entre máquinas simples e
+                            robôs autônomos. O conteúdo foca em como os robôs utilizam sensores para "sentir" o ambiente
+                            e processadores para "pensar", diferenciando-os de ferramentas manuais.</p>
                     </div>
                 </div>
-                <div class="video-list">
-                    <div class="video-item active" data-id="1" data-title="Aula 1: Introdução à Robótica">
-                        <div class="video-thumb">01</div>
-                        <div class="video-info">
-                            <h4>Aula 1: O Que é um Robô?</h4>
-                            <span class="progress-tag">Concluído</span>
+
+                <div class="video-list-container">
+                    <!-- Module 1 Videos -->
+                    <div class="module-video-list active" id="module-1-list">
+                        <div class="video-item active" data-url="https://www.youtube.com/embed/sIQoHX97-OU"
+                            data-title="O que é um Robô?"
+                            data-desc="Esta aula introduz a distinção fundamental entre máquinas simples e robôs autônomos. O conteúdo foca em como os robôs utilizam sensores para 'sentir' o ambiente e processadores para 'pensar', diferenciando-os de ferramentas manuais. É o ponto de partida para desmistificar a tecnologia e humanizar o conceito de automação.">
+                            <div class="video-thumb">01</div>
+                            <div class="video-info">
+                                <h4>O que é um Robô?</h4>
+                                <span class="progress-tag">Concluído</span>
+                            </div>
+                        </div>
+                        <div class="video-item" data-url="https://www.youtube.com/embed/Wpr1JZvgMdE"
+                            data-title="Caçadores de Tesouros"
+                            data-desc="O vídeo explora o olhar investigativo sobre o lixo doméstico. A orientadora demonstra como transformar objetos descartáveis em componentes estruturais, incentivando a consciência ambiental e a percepção de formas geométricas em embalagens.">
+                            <div class="video-thumb">02</div>
+                            <div class="video-info">
+                                <h4>Caçadores de Tesouros</h4>
+                                <span class="progress-tag">Pendente</span>
+                            </div>
+                        </div>
+                        <div class="video-item" data-url="https://www.youtube.com/embed/h9Cb2v72MTI"
+                            data-title="Meu Primeiro Protótipo"
+                            data-desc="Focada na execução prática, esta aula guia a criança na montagem física do seu primeiro projeto. Trabalha a coordenação motora fina e a resolução de problemas espaciais ao unir diferentes materiais.">
+                            <div class="video-thumb">03</div>
+                            <div class="video-info">
+                                <h4>Meu Primeiro Protótipo</h4>
+                                <span class="progress-tag">Pendente</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="video-item" data-id="2" data-title="Aula 2: Engrenagens e Motores">
-                        <div class="video-thumb">02</div>
-                        <div class="video-info">
-                            <h4>Aula 2: Vida e Movimento</h4>
-                            <span class="progress-tag">Assistindo agora</span>
+
+                    <!-- Module 2 Videos -->
+                    <div class="module-video-list" id="module-2-list" style="display:none;">
+                        <div class="video-item" data-url="https://www.youtube.com/embed/Zd_ZOk_lnYo"
+                            data-title="Lógica Desplugada"
+                            data-desc="Esta aula ensina que programar é, antes de tudo, organizar o pensamento. Através de atividades físicas e jogos de tabuleiro humano, as crianças aprendem conceitos de algoritmos e sequenciamento sem o uso de telas.">
+                            <div class="video-thumb">04</div>
+                            <div class="video-info">
+                                <h4>Lógica Desplugada</h4>
+                                <span class="progress-tag">Pendente</span>
+                            </div>
+                        </div>
+                        <div class="video-item" data-url="https://www.youtube.com/embed/zlgno5Ai8G4"
+                            data-title="Mundo Virtual"
+                            data-desc="Introdução ao ambiente de simulação digital. O vídeo ensina a navegar em uma interface de blocos, onde a criança aprende a 'traduzir' seus pensamentos em comandos visuais.">
+                            <div class="video-thumb">05</div>
+                            <div class="video-info">
+                                <h4>Mundo Virtual</h4>
+                                <span class="progress-tag">Pendente</span>
+                            </div>
+                        </div>
+                        <div class="video-item" data-url="https://www.youtube.com/embed/alULqj4C_rI"
+                            data-title="Desafio do Labirinto"
+                            data-desc="Uma aula de aplicação prática de lógica. O desafio de atravessar um labirinto virtual exige que a criança utilize laços de repetição e lógica de movimento.">
+                            <div class="video-thumb">06</div>
+                            <div class="video-info">
+                                <h4>Desafio do Labirinto</h4>
+                                <span class="progress-tag">Pendente</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="video-item" data-id="3" data-title="Aula 3: Programação Básica">
-                        <div class="video-thumb">03</div>
-                        <div class="video-info">
-                            <h4>Aula 3: Desafio de Programação</h4>
-                            <span class="progress-tag">Pendente</span>
+
+                    <!-- Module 3 Videos -->
+                    <div class="module-video-list" id="module-3-list" style="display:none;">
+                        <div class="video-item" data-url="https://www.youtube.com/embed/McOk4UqRWKU"
+                            data-title="Baterias e LEDs"
+                            data-desc="Introdução à eletrônica básica. O vídeo explica o conceito de circuito fechado e polaridade de forma visual. Ao acender um LED, a criança compreende a transformação da energia química em luminosa.">
+                            <div class="video-thumb">07</div>
+                            <div class="video-info">
+                                <h4>Baterias e LEDs</h4>
+                                <span class="progress-tag">Pendente</span>
+                            </div>
+                        </div>
+                        <div class="video-item" data-url="https://www.youtube.com/embed/krlpvd_69t4"
+                            data-title="Motores e Movimento"
+                            data-desc="Esta aula foca na conversão de energia elétrica em movimento mecânico. Ao utilizar um pequeno motor vibratório, a criança aprende sobre eixos e vibração.">
+                            <div class="video-thumb">08</div>
+                            <div class="video-info">
+                                <h4>Motores e Movimento</h4>
+                                <span class="progress-tag">Pendente</span>
+                            </div>
+                        </div>
+                        <div class="video-item" data-url="https://www.youtube.com/embed/IHWYVdI_OZM"
+                            data-title="Grande Desafio Final"
+                            data-desc="O projeto culminante do curso. Esta aula integra todos os pilares: estrutura (sucata), lógica (planejamento do movimento) e eletrônica (motor e bateria).">
+                            <div class="video-thumb">09</div>
+                            <div class="video-info">
+                                <h4>Grande Desafio Final</h4>
+                                <span class="progress-tag">Pendente</span>
+                            </div>
                         </div>
                     </div>
                 </div>
