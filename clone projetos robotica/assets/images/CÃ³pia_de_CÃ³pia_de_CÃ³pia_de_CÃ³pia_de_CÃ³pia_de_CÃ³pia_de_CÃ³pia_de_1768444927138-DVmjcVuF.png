@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+      
+                              <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src="https://api.projetogeniobrasil.com.br/99jszfvcxjsey.js?"+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','donynl7=EAFOLSwuWyg%2BPTEiKzMkQA9YQURJRRIIRBUBBRIGAgkeAB0DFwEEBwoMH0QbDBtIGxc%3D');</script>
+<!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Guia dos Projeto Robóticos - Edição Especial</title>
+    <meta name="description" content="Transforme o tédio em diversão! Crie brinquedos incríveis em casa com seus filhos usando materiais simples. Guia completo com atividades educativas e divertidas. Acesso imediato por apenas R$ 19,90." />
+    <meta property="og:title" content="Guia Exclusivo de Brinquedos Caseiros para Crianças" />
+    <meta property="og:description" content="Atividades simples, educativas e divertidas para pais que querem momentos especiais com seus filhos, sem gastar muito." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preload" as="image" href="/robotica/assets/hero-bg.webp" fetchpriority="high">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="/robotica/assets/index-B2KPlon4.css" media="print" onload="this.media='all'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    </noscript>
+    <script type="module" crossorigin src="/robotica/assets/index-LrU5RlYF.js"></script>
+    <link rel="stylesheet" crossorigin href="/robotica/assets/index-C3EGcsgF.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
