@@ -572,10 +572,17 @@
                 class="absolute -top-3 -right-3 z-20 bg-primary text-primary-foreground px-3 py-1.5 rounded-md text-[10px] font-black uppercase tracking-wider shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] transform rotate-3 border-2 border-white/20">
                 +100 PROJETOS</div>
               <div class="w-full h-full overflow-hidden rounded-xl">
-                <video controls class="w-full h-full object-cover" poster="assets/images/bonus1.webp" preload="none"
-                  width="320" height="568">
-                  <source src="assets/video/hero-video.mp4" type="video/mp4">
-                </video>
+                <script src="https://fast.wistia.com/player.js" async></script>
+                <script src="https://fast.wistia.com/embed/a9htle6tso.js" async type="module"></script>
+                <style>
+                  wistia-player[media-id='a9htle6tso']:not(:defined) {
+                    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/a9htle6tso/swatch');
+                    display: block;
+                    filter: blur(5px);
+                    padding-top: 177.78%;
+                  }
+                </style>
+                <wistia-player media-id="a9htle6tso" aspect="0.5625"></wistia-player>
               </div>
             </div>
           </div>
@@ -984,7 +991,8 @@
         <div class="offer-card-new">
 
           <!-- Logo da Imagem 2 -->
-          <img src="assets/images/logo-engenheiros.png" alt="Projeto Engenheiros Logo" class="offer-logo">
+          <img src="https://i.ibb.co/gMDMbtmb/Gemini-Generated-Image-vt23d7vt23d7vt23-removebg-preview-1.png"
+            alt="Projeto Engenheiros Logo" class="offer-logo">
 
           <h2 class="offer-title-new">Guia Completo dos Projetos Robóticos</h2>
 
