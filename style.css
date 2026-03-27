@@ -195,6 +195,16 @@ body {
     margin-bottom: 50px;
 }
 
+.header-logo {
+    margin-bottom: 25px;
+}
+
+.logo-image {
+    max-width: 280px;
+    height: auto;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.08));
+}
+
 .title-with-emoji {
     display: flex;
     justify-content: center;
