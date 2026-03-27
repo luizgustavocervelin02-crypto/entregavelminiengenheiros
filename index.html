@@ -4,291 +4,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Engenheiros | Área de Membros</title>
-    <meta name="description"
-        content="Área de membros oficial do curso Mini Engenheiros. Aprenda robótica de forma divertida!">
+    <title>Seus Materiais Mágicos | Projeto Gênio Brasil</title>
+    <meta name="description" content="Acesse todos os seus materiais mágicos em um só lugar.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!-- Decorative Background Gears -->
-    <div class="bg-decor">
-        <svg class="gear gear-small" viewBox="0 0 100 100">
-            <path
-                d="M50 20c-16.6 0-30 13.4-30 30s13.4 30 30 30 30-13.4 30-30-13.4-30-30-30zm0 46c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM50 0l-5 15h10L50 0zm35 15l-13 8 5 9 13-8-5-9zM100 50l-15-5v10l15-5zM85 85l-8-13-9 5 8 13 9-5zM50 100l5-15h-10l5 15zm-35-15l13-8-5-9-13 8 5 9zM0 50l15 5V45L0 50zm15-35l8 13 9-5-8-13-9 5z" />
-        </svg>
-        <svg class="gear gear-large" viewBox="0 0 100 100">
-            <path
-                d="M50 20c-16.6 0-30 13.4-30 30s13.4 30 30 30 30-13.4 30-30-13.4-30-30-30zm0 46c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM50 0l-5 15h10L50 0zm35 15l-13 8 5 9 13-8-5-9zM100 50l-15-5v10l15-5zM85 85l-8-13-9 5 8 13 9-5zM50 100l5-15h-10l5 15zm-35-15l13-8-5-9-13 8 5 9zM0 50l15 5V45L0 50zm15-35l8 13 9-5-8-13-9 5z" />
-        </svg>
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <span>💡 DESÇA A PÁGINA PARA TER ACESSO AOS MATERIAIS 🎁</span>
     </div>
 
-    <!-- Global Countdown Bar -->
-    <div id="countdown-bar" class="countdown-bar">
-        <span>Próximo Passo: <b>Certificado de Mini Engenheiro</b> disponível em:</span>
-        <div id="countdown" class="countdown-timer">00d 00h 00m 00s</div>
-    </div>
+    <main class="container">
+        <!-- Importance Section -->
+        <section class="important-card">
+            <div class="important-header">
+                <span class="icon-bookmark">🔖</span>
+                <h2>⚠️ IMPORTANTE: Salve Esta Página Agora!</h2>
+            </div>
+            <p class="important-text">
+                Para não perder o acesso aos seus materiais, você precisa <strong>salvar o link desta página</strong>.
+                Siga os passos abaixo:
+            </p>
+            <ol class="steps-list">
+                <li>Clique no botão <strong>"Copiar Link"</strong> abaixo</li>
+                <li>Cole o link em uma <strong>conversa do WhatsApp</strong> (pode ser em qualquer conversa, até mesmo
+                    enviando para você mesma) <strong>OU</strong> no <strong>bloco de notas</strong> do seu celular</li>
+                <li>Assim, sempre que quiser acessar seus materiais, basta clicar no link salvo!</li>
+            </ol>
+            <div class="copy-section">
+                <button id="copy-btn" class="btn-copy">
+                    <span class="icon-copy">📋</span> Copiar Link
+                </button>
+            </div>
+            <p class="tip-text">
+                💡 Dica: Se preferir, você também pode adicionar esta página aos <strong>favoritos do seu
+                    navegador</strong>
+            </p>
+        </section>
 
-    <header>
-        <div class="logo">
-            <img src="assets/robot-logo.png" alt="Logotipo Mini Engenheiros">
-            <span>Mini Engenheiros</span>
+        <!-- Support Section -->
+        <section class="support-card">
+            <div class="support-item email-box">
+                <p>Qualquer dúvida, entre em contato conosco pelo e-mail <strong>santorogroup@outlook.com</strong> —
+                    responderemos em até 2 dias úteis</p>
+            </div>
+            <div class="support-item hint-box">
+                <span class="icon-star">✨</span>
+                <div>
+                    <strong>Dica importante:</strong>
+                    <p>📚 Seu acesso é <strong>vitalício</strong>, e estamos sempre atualizando as pastas com novos
+                        conteúdos — então vale a pena salvar os links e dar uma olhadinha de vez em quando!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Title -->
+        <header class="main-header">
+            <div class="title-with-emoji">
+                <span class="emoji-main">📚</span>
+                <h1>Seus Materiais Mágicos</h1>
+            </div>
+            <p class="subtitle">Clique em cada cartão para acessar seus materiais no Google Drive</p>
+        </header>
+
+        <!-- Instruction Alert -->
+        <div class="instruction-alert">
+            <p>✨ <span>Psiu!</span> Não esqueça de descer até o final da página! 🎁</p>
+            <p>Preparamos <strong>presentes especiais extras</strong> que vão deixar sua jornada ainda mais encantada!
+                Cada cartão abaixo é uma porta para um mundo de descobertas mágicas! 🌟</p>
         </div>
-        <nav>
-            <a href="#" class="nav-link active" data-target="home">Início</a>
-            <a href="#" class="nav-link" data-target="aulas">Videoaulas</a>
-            <a href="#" class="nav-link" data-target="projetos">Projetos</a>
-            <a href="#" class="nav-link" data-target="bonus">Bônus</a>
-        </nav>
-    </header>
 
-    <main id="main-content">
-        <!-- Home Section -->
-        <section id="home-section">
-            <h2 class="section-title">Bem-vindo, Mini Engenheiro!</h2>
-            <div class="module-grid">
-                <!-- Video Module Preview -->
-                <div class="card" data-trigger="aulas">
-                    <div class="card-icon"><img src="assets/video-icon.png" alt="Vídeo Icon"></div>
-                    <h3>Minhas Videoaulas</h3>
-                    <p>Assista às aulas fundamentais para se tornar um mestre em robótica.</p>
-                    <a href="#" class="btn btn-primary" onclick="showSection('aulas')">Continuar Aulas</a>
+        <!-- Modules Grid -->
+        <div class="modules-grid">
+            <!-- Card 1 -->
+            <div class="module-card card-cyan">
+                <div class="card-icons">
+                    <span class="icon">🤖</span>
+                    <span class="icon">⚙️</span>
                 </div>
-
-                <!-- Projects Module Preview -->
-                <div class="card" data-trigger="projetos">
-                    <div class="card-icon"><img src="assets/project-icon.png" alt="Projeto Icon"></div>
-                    <h3>Laboratório de Projetos</h3>
-                    <p>Baixe guias de montagem e compartilhe suas criações com a turma.</p>
-                    <a href="#" class="btn btn-primary" onclick="showSection('projetos')">Ver Projetos</a>
-                </div>
-
-                <!-- Bonus Module Preview -->
-                <div class="card" data-trigger="bonus">
-                    <div class="card-icon"><img src="assets/gift-icon.png" alt="Bônus Icon"></div>
-                    <h3>Materiais Bônus</h3>
-                    <p>Conteúdos exclusivos e ferramentas extras para você decolar.</p>
-                    <a href="#" class="btn btn-orange" onclick="showSection('bonus')">Acessar Bônus</a>
-                </div>
-
-                <!-- Certificate -->
-                <div id="certificate-card" class="card locked">
-                    <div class="locked-badge">DESBLOQUEIA EM 7 DIAS</div>
-                    <div class="card-icon"><img src="assets/medal-icon.png" alt="Medalha Icon"></div>
-                    <h3>Diploma Oficial</h3>
-                    <p>Conclua todas as aulas e realize seus projetos para liberar seu certificado.</p>
-                    <a href="#" class="btn btn-primary disabled" id="cert-btn">Certificado Bloqueado</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Video Lessons Section -->
-        <section id="aulas-section" class="video-module">
-            <h2 class="section-title">Nossas Videoaulas</h2>
-
-            <!-- Module Switcher Tabs -->
-            <div class="module-tabs">
-                <button class="tab-btn active" data-module="1">Módulo 1: Sucata</button>
-                <button class="tab-btn" data-module="2">Módulo 2: Lógica</button>
-                <button class="tab-btn" data-module="3">Módulo 3: Eletrônica</button>
+                <h3>Guia de Projetos Robóticos</h3>
+                <p>+100 projetos de robótica do nível básico ao avançado.</p>
+                <a href="https://drive.google.com/drive/folders/1tlABjiU9CErKfZ9DHte_SLJU7-V06P9h" target="_blank"
+                    class="btn-access">
+                    <span class="icon-link">🔗</span> Acessar Agora
+                </a>
             </div>
 
-            <div class="video-grid">
-                <div class="video-container">
-                    <div class="video-player-container">
-                        <iframe id="main-video-iframe" width="100%" height="100%"
-                            src="https://www.youtube.com/embed/sIQoHX97-OU" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="video-description-box card" style="margin-top: 20px;">
-                        <h3 id="current-video-title">O que é um Robô?</h3>
-                        <p id="current-video-desc">Esta aula introduz a distinção fundamental entre máquinas simples e
-                            robôs autônomos. O conteúdo foca em como os robôs utilizam sensores para "sentir" o ambiente
-                            e processadores para "pensar", diferenciando-os de ferramentas manuais.</p>
-                    </div>
+            <!-- Card 2 -->
+            <div class="module-card card-pink">
+                <div class="card-icons">
+                    <span class="icon">🎨</span>
+                    <span class="icon">🎭</span>
                 </div>
-
-                <div class="video-list-container">
-                    <!-- Module 1 Videos -->
-                    <div class="module-video-list active" id="module-1-list">
-                        <div class="video-item active" data-url="https://www.youtube.com/embed/sIQoHX97-OU"
-                            data-title="O que é um Robô?"
-                            data-desc="Esta aula introduz a distinção fundamental entre máquinas simples e robôs autônomos. O conteúdo foca em como os robôs utilizam sensores para 'sentir' o ambiente e processadores para 'pensar', diferenciando-os de ferramentas manuais. É o ponto de partida para desmistificar a tecnologia e humanizar o conceito de automação.">
-                            <div class="video-thumb">01</div>
-                            <div class="video-info">
-                                <h4>O que é um Robô?</h4>
-                                <span class="progress-tag">Concluído</span>
-                            </div>
-                        </div>
-                        <div class="video-item" data-url="https://www.youtube.com/embed/Wpr1JZvgMdE"
-                            data-title="Caçadores de Tesouros"
-                            data-desc="O vídeo explora o olhar investigativo sobre o lixo doméstico. A orientadora demonstra como transformar objetos descartáveis em componentes estruturais, incentivando a consciência ambiental e a percepção de formas geométricas em embalagens.">
-                            <div class="video-thumb">02</div>
-                            <div class="video-info">
-                                <h4>Caçadores de Tesouros</h4>
-                                <span class="progress-tag">Pendente</span>
-                            </div>
-                        </div>
-                        <div class="video-item" data-url="https://www.youtube.com/embed/h9Cb2v72MTI"
-                            data-title="Meu Primeiro Protótipo"
-                            data-desc="Focada na execução prática, esta aula guia a criança na montagem física do seu primeiro projeto. Trabalha a coordenação motora fina e a resolução de problemas espaciais ao unir diferentes materiais.">
-                            <div class="video-thumb">03</div>
-                            <div class="video-info">
-                                <h4>Meu Primeiro Protótipo</h4>
-                                <span class="progress-tag">Pendente</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Module 2 Videos -->
-                    <div class="module-video-list" id="module-2-list" style="display:none;">
-                        <div class="video-item" data-url="https://www.youtube.com/embed/Zd_ZOk_lnYo"
-                            data-title="Lógica Desplugada"
-                            data-desc="Esta aula ensina que programar é, antes de tudo, organizar o pensamento. Através de atividades físicas e jogos de tabuleiro humano, as crianças aprendem conceitos de algoritmos e sequenciamento sem o uso de telas.">
-                            <div class="video-thumb">04</div>
-                            <div class="video-info">
-                                <h4>Lógica Desplugada</h4>
-                                <span class="progress-tag">Pendente</span>
-                            </div>
-                        </div>
-                        <div class="video-item" data-url="https://www.youtube.com/embed/zlgno5Ai8G4"
-                            data-title="Mundo Virtual"
-                            data-desc="Introdução ao ambiente de simulação digital. O vídeo ensina a navegar em uma interface de blocos, onde a criança aprende a 'traduzir' seus pensamentos em comandos visuais.">
-                            <div class="video-thumb">05</div>
-                            <div class="video-info">
-                                <h4>Mundo Virtual</h4>
-                                <span class="progress-tag">Pendente</span>
-                            </div>
-                        </div>
-                        <div class="video-item" data-url="https://www.youtube.com/embed/alULqj4C_rI"
-                            data-title="Desafio do Labirinto"
-                            data-desc="Uma aula de aplicação prática de lógica. O desafio de atravessar um labirinto virtual exige que a criança utilize laços de repetição e lógica de movimento.">
-                            <div class="video-thumb">06</div>
-                            <div class="video-info">
-                                <h4>Desafio do Labirinto</h4>
-                                <span class="progress-tag">Pendente</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Module 3 Videos -->
-                    <div class="module-video-list" id="module-3-list" style="display:none;">
-                        <div class="video-item" data-url="https://www.youtube.com/embed/McOk4UqRWKU"
-                            data-title="Baterias e LEDs"
-                            data-desc="Introdução à eletrônica básica. O vídeo explica o conceito de circuito fechado e polaridade de forma visual. Ao acender um LED, a criança compreende a transformação da energia química em luminosa.">
-                            <div class="video-thumb">07</div>
-                            <div class="video-info">
-                                <h4>Baterias e LEDs</h4>
-                                <span class="progress-tag">Pendente</span>
-                            </div>
-                        </div>
-                        <div class="video-item" data-url="https://www.youtube.com/embed/krlpvd_69t4"
-                            data-title="Motores e Movimento"
-                            data-desc="Esta aula foca na conversão de energia elétrica em movimento mecânico. Ao utilizar um pequeno motor vibratório, a criança aprende sobre eixos e vibração.">
-                            <div class="video-thumb">08</div>
-                            <div class="video-info">
-                                <h4>Motores e Movimento</h4>
-                                <span class="progress-tag">Pendente</span>
-                            </div>
-                        </div>
-                        <div class="video-item" data-url="https://www.youtube.com/embed/IHWYVdI_OZM"
-                            data-title="Grande Desafio Final"
-                            data-desc="O projeto culminante do curso. Esta aula integra todos os pilares: estrutura (sucata), lógica (planejamento do movimento) e eletrônica (motor e bateria).">
-                            <div class="video-thumb">09</div>
-                            <div class="video-info">
-                                <h4>Grande Desafio Final</h4>
-                                <span class="progress-tag">Pendente</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projetos-section" style="display:none;">
-            <div class="header-with-action">
-                <h2 class="section-title">Laboratório Criativo</h2>
-                <div
-                    style="background: rgba(52, 152, 219, 0.1); padding: 10px 20px; border-radius: 20px; font-weight: 700; color: var(--primary-blue);">
-                    Área Experimental
-                </div>
+                <h3>Guia Completo de Brinquedos Caseiros</h3>
+                <p>Aprenda a criar brinquedos incríveis usando materiais simples que você tem em casa!</p>
+                <a href="https://drive.google.com/drive/folders/19KSVYnsXokzpd0uTcw3-slxy11FS35mi" target="_blank"
+                    class="btn-access">
+                    <span class="icon-link">🔗</span> Acessar Agora
+                </a>
             </div>
 
-            <div class="module-grid">
-                <div class="card project-card">
-                    <div class="project-img">
-                        <img src="assets/robot-proj-1.png" alt="Robô Carro">
-                    </div>
-                    <h3>Robô Rodas-Velozes</h3>
-                    <p>Instruções passo a passo para montar seu primeiro carrinho robotizado com sensores.</p>
-                    <div class="project-meta">
-                        <span><img src="assets/project-icon.png" style="width:16px;"> Nível: Fácil</span>
-                        <span><img src="assets/video-icon.png" style="width:16px;"> 3 Vídeos</span>
-                    </div>
-                    <a href="#" class="btn btn-primary" style="width: 100%;">Baixar Manual PDF</a>
+            <!-- Card 3 -->
+            <div class="module-card card-purple">
+                <div class="card-icons">
+                    <span class="icon">📘</span>
+                    <span class="icon">📖</span>
                 </div>
-
-                <div class="card project-card">
-                    <div class="project-img">
-                        <img src="assets/robot-proj-2.png" alt="Braço Robótico">
-                    </div>
-                    <h3>Braço Mecânico DIY</h3>
-                    <p>Desafio avançado: crie um braço que consegue pegar objetos leves e empilhar blocos.</p>
-                    <div class="project-meta">
-                        <span><img src="assets/project-icon.png" style="width:16px;"> Nível: Médio</span>
-                        <span><img src="assets/video-icon.png" style="width:16px;"> 5 Vídeos</span>
-                    </div>
-                    <a href="#" class="btn btn-primary" style="width: 100%;">Ver Desafio</a>
-                </div>
+                <h3>MAGIA INFANTIL – MAIS DE 100 EXPERIMENTOS</h3>
+                <p>Experimentos científicos divertidos e educativos para crianças explorarem o mundo da ciência de forma
+                    mágica!</p>
+                <a href="https://drive.google.com/drive/folders/12FX2D6NwpOt3utYOxsehacsS4Ee2iR9R" target="_blank"
+                    class="btn-access">
+                    <span class="icon-link">🔗</span> Acessar Agora
+                </a>
             </div>
 
-            <div class="card interactive-box">
-                <div class="interactive-content">
-                    <div class="mascot-mini">
-                        <img src="assets/robot-logo.png" alt="Tobor">
-                    </div>
-                    <div>
-                        <h3>Mural da Engenharia!</h3>
-                        <p>Já terminou sua montagem? Tire uma foto bem legal do seu robô e compartilhe com os outros
-                            gênios da turma!</p>
-                        <div class="action-group">
-                            <button class="btn btn-primary">Enviar Minha Foto</button>
-                            <button class="btn btn-orange">Ver Galeria de Robôs</button>
-                        </div>
-                    </div>
+            <!-- Card 4 -->
+            <div class="module-card card-yellow">
+                <div class="card-icons">
+                    <span class="icon">🍪</span>
+                    <span class="icon">🥨</span>
                 </div>
-            </div>
-        </section>
-
-        <!-- Bonus Section -->
-        <section id="bonus-section" style="display:none;">
-            <h2 class="section-title">Bônus Exclusivo</h2>
-            <div class="card bonus-card">
-                <div class="bonus-img-container">
-                    <img src="assets/bonus-box.png" alt="Bônus" class="floating">
-                </div>
-                <div class="bonus-info">
-                    <span class="bonus-label">ESPECIAL</span>
-                    <h3>Kit Digital de Adesivos & Posters</h3>
-                    <p>Adesivos incríveis para imprimir e decorar seus robôs, seu laboratório e seu caderno! Inclui
-                        também 3 posters exclusivos "Pequeno Grande Inventor".</p>
-                    <div style="display:flex; gap:15px; margin-top:20px;">
-                        <a href="#" class="btn btn-orange">Baixar Kit Bônus (PDF)</a>
-                        <a href="#" class="btn btn-primary">Instruções de Uso</a>
-                    </div>
-                </div>
+                <h3>Receitas Encantadas para Pequenos Feiticeiros</h3>
+                <p>Receitas deliciosas e fáceis para fazer com as crianças e criar momentos mágicos na cozinha!</p>
+                <a href="https://drive.google.com/drive/folders/1ry27_oF8BjraRzRUshZ3WewtiYXTCjhM" target="_blank"
+                    class="btn-access">
+                    <span class="icon-link">🔗</span> Acessar Agora
+                </a>
             </div>
 
-            <div class="card" style="margin-top:20px; text-align:center;">
-                <h3>Aula Secreta: Robótica com Recicláveis</h3>
-                <p>Aprenda a criar robôs incríveis usando apenas sucata e criatividade.</p>
-                <a href="#" class="btn btn-primary" style="margin-top:15px;">Acessar Aula Secreta</a>
+            <!-- Card 5 -->
+            <div class="module-card card-blue">
+                <div class="card-icons">
+                    <span class="icon">🌙</span>
+                    <span class="icon">🌜</span>
+                </div>
+                <h3>Histórias Mágicas para Dormir</h3>
+                <p>Histórias encantadoras que transformam a hora de dormir em um momento especial e relaxante!</p>
+                <a href="https://drive.google.com/drive/folders/1dlIygUPLLjqLX7LEGiUYtSkMcvqIHzka" target="_blank"
+                    class="btn-access">
+                    <span class="icon-link">🔗</span> Acessar Agora
+                </a>
             </div>
-        </section>
 
+            <!-- Card 6 -->
+            <div class="module-card card-salmon">
+                <div class="card-icons">
+                    <span class="icon">💕</span>
+                    <span class="icon">🖤</span>
+                </div>
+                <h3>Desconecte com Conexão</h3>
+                <p>Guia afetivo para reduzir o tempo de telas e fortalecer os laços familiares através de atividades
+                    significativas!</p>
+                <a href="https://drive.google.com/drive/folders/1bIRqc5BbrU6bUT7nVtfxArw-lHMp9fZF" target="_blank"
+                    class="btn-access">
+                    <span class="icon-link">🔗</span> Acessar Agora
+                </a>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="module-card card-lavender">
+                <div class="card-icons">
+                    <span class="icon">🎲</span>
+                    <span class="icon">🎲</span>
+                </div>
+                <h3>50 Brincadeiras Bíblicas para Fazer com Crianças</h3>
+                <p>Atividades lúdicas que ensinam valores e histórias bíblicas de forma divertida e envolvente!</p>
+                <a href="https://drive.google.com/drive/folders/1NuYEOvymCmEBWeakUBViwJ0EKalrxt-G" target="_blank"
+                    class="btn-access">
+                    <span class="icon-link">🔗</span> Acessar Agora
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="stars-icons">✨ ⚛️ ✨</div>
+                <h2>🌟 Divirta-se criando momentos mágicos e inesquecíveis com as crianças! 🌟</h2>
+                <p class="signature">Com carinho, <strong>Laura</strong> e toda equipe <strong>Projeto Gênio Brasil
+                        💜</strong></p>
+            </div>
+        </footer>
     </main>
 
     <script src="script.js"></script>
